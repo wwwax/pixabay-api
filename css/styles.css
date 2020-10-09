@@ -1,11 +1,7 @@
+/* COMMON */
+
 * {
   box-sizing: border-box;
-}
-
-.page {
-  margin: 0;
-  padding: 16px 0;
-  font-family: 'Roboto', sans-serif;
 }
 
 img {
@@ -14,20 +10,30 @@ img {
   height: auto;
 }
 
+/* PAGE */
+
+.page {
+  margin: 0;
+  padding: 16px 8px;
+  font-family: sans-serif;
+}
+
+/* FORM */
+
 .form {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   padding: 8px;
   border-radius: 2px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
 
-.input {
+.form .input {
   flex-grow: 1;
   padding: 8px;
   font-size: 16px;
@@ -36,8 +42,10 @@ img {
   border-radius: 2px;
 }
 
+/* GRID */
+
 .grid {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 16px;
   display: grid;
@@ -48,8 +56,8 @@ img {
 .grid-item {
   padding: 16px;
   border-radius: 2px;
-  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 3px 1px -2px rgba(0, 0, 0, 0.12);
 }
 
 .grid-item > img {
@@ -57,6 +65,8 @@ img {
   width: 100%;
   object-fit: cover;
 }
+
+/* BUTTON */
 
 .main .load-more {
   display: block;
@@ -101,6 +111,14 @@ img {
 .button:active {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
+@media (max-width: 767px) {
+  .button {
+    font-size: 10px;
+  }
+}
+
+/* LOADER */
 
 .loader-overlay {
   display: none;

@@ -1,44 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>pixabay-api</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <title>pixabay-api</title>
-</head>
-
-<body class="page">
-
-  <!-- HTML -->
-
-  <!-- LOADER -->
-  <div class="loader-overlay">
-    <div class="loader">
-      <svg class="circular" viewBox="25 25 50 50">
-        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10">
-      </svg>
+  <body class="page">
+    <!-- LOADER -->
+    <div class="loader-overlay">
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <!-- <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"> -->
+        </svg>
+      </div>
     </div>
-  </div>
 
-  <!-- SEARCH FORM -->
-  <form class="form">
-    <input type="text" class="input">
-    <button type=" submit " class="button">Submit</button>
-  </form>
+    <!-- FORM -->
+    <form class="form">
+      <input class="input" type="text" />
+      <button class="button" type="submit">Submit</button>
+    </form>
 
-  <!-- IMAGE GRID -->
-  <main class="main">
-    <div class="grid"></div>
-    <button class="load-more button">Show more</button>
-  </main>
+    <!-- IMAGE GRID -->
+    <main class="main">
+      <div class="grid"></div>
+      <button class="load-more button">Show more</button>
+    </main>
 
-  <!-- JavaScript -->
-
-  <script src="js/index.js"></script>
-
-</body>
-
+    <!-- script -->
+    <script src="js/index.js"></script>
+  </body>
 </html>
